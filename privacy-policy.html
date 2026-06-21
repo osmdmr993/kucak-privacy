@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kucak - Gizlilik Politikası</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff9f5; color: #173404; line-height: 1.7; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+    h1 { font-size: 28px; font-weight: 800; color: #173404; margin-bottom: 8px; }
+    .subtitle { color: #854F0B; margin-bottom: 40px; font-size: 14px; }
+    h2 { font-size: 18px; font-weight: 700; color: #c2607a; margin: 32px 0 12px; }
+    p { margin-bottom: 12px; font-size: 15px; }
+    ul { margin: 8px 0 12px 20px; }
+    li { margin-bottom: 6px; font-size: 15px; }
+    .lang-switch { display: flex; gap: 12px; margin-bottom: 32px; }
+    .lang-btn { padding: 8px 20px; border-radius: 20px; border: 2px solid #c2607a; background: transparent; color: #c2607a; cursor: pointer; font-size: 14px; font-weight: 600; }
+    .lang-btn.active { background: #c2607a; color: white; }
+    .section { display: none; }
+    .section.active { display: block; }
+    .last-updated { font-size: 13px; color: #aaa; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0d5f0; }
+    a { color: #c2607a; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🤱 Kucak</h1>
+    <p class="subtitle">Seni de bebeğini de kucaklayan uzman.</p>
+
+    <div class="lang-switch">
+      <button class="lang-btn active" onclick="showLang('tr')">Türkçe</button>
+      <button class="lang-btn" onclick="showLang('en')">English</button>
+    </div>
+
+    <!-- TÜRKÇE -->
+    <div class="section active" id="tr">
+      <h1 style="font-size:22px; margin-bottom:4px;">Gizlilik Politikası</h1>
+      <p style="color:#854F0B; margin-bottom:24px;">Son güncelleme: Haziran 2025</p>
+
+      <p>Kucak uygulamasını kullandığınız için teşekkür ederiz. Bu gizlilik politikası, kişisel verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.</p>
+
+      <h2>Topladığımız Bilgiler</h2>
+      <p>Uygulamamızı kullanırken aşağıdaki bilgileri toplayabiliriz:</p>
+      <ul>
+        <li>Ad ve iletişim bilgileri (e-posta adresi)</li>
+        <li>Gebelik haftası, bebek yaşı, emzirme durumu gibi sağlık profili bilgileri</li>
+        <li>Uygulama içi sohbet geçmişi ve beslenme soruları</li>
+        <li>Abonelik ve ödeme durumu bilgileri (RevenueCat aracılığıyla)</li>
+      </ul>
+
+      <h2>Bilgileri Nasıl Kullanıyoruz</h2>
+      <ul>
+        <li>Size kişiselleştirilmiş beslenme ve sağlık tavsiyeleri sunmak için</li>
+        <li>Uygulama deneyiminizi iyileştirmek için</li>
+        <li>Teknik destek sağlamak için</li>
+        <li>Abonelik işlemlerini yönetmek için</li>
+      </ul>
+
+      <h2>Verilerinizi Kimlerle Paylaşıyoruz</h2>
+      <p>Kişisel verilerinizi üçüncü taraflara satmıyoruz. Yalnızca hizmet sağlayıcılarımızla (Supabase — veri depolama, Anthropic — yapay zeka, RevenueCat — abonelik yönetimi) paylaşıyoruz. Bu hizmet sağlayıcılar verilerinizi yalnızca belirtilen amaçlar doğrultusunda kullanır.</p>
+
+      <h2>Veri Güvenliği</h2>
+      <p>Verilerinizi korumak için endüstri standardı güvenlik önlemleri kullanıyoruz. Tüm veriler şifreli olarak aktarılır ve depolanır.</p>
+
+      <h2>Sağlık Verilerinin Gizliliği</h2>
+      <p>Sağlık bilgileriniz (gebelik durumu, beslenme soruları vb.) yalnızca size daha iyi hizmet sunmak amacıyla kullanılır. Bu bilgiler reklam amaçlı kullanılmaz ve üçüncü taraflarla paylaşılmaz.</p>
+
+      <h2>Çocukların Gizliliği</h2>
+      <p>Uygulamamız 18 yaş altı bireylere yönelik değildir. 18 yaş altı kullanıcılardan bilerek kişisel veri toplamıyoruz.</p>
+
+      <h2>Verilerinizi Silme</h2>
+      <p>Hesabınızı ve tüm verilerinizi silmek için <a href="mailto:destek@kucak.app">destek@kucak.app</a> adresine e-posta gönderebilirsiniz. Talebinizi 30 gün içinde işleme alacağız.</p>
+
+      <h2>İletişim</h2>
+      <p>Gizlilik politikamız hakkında sorularınız için: <a href="mailto:destek@kucak.app">destek@kucak.app</a></p>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="section" id="en">
+      <h1 style="font-size:22px; margin-bottom:4px;">Privacy Policy</h1>
+      <p style="color:#854F0B; margin-bottom:24px;">Last updated: June 2025</p>
+
+      <p>Thank you for using Kucak. This privacy policy explains how we collect, use, and protect your personal information.</p>
+
+      <h2>Information We Collect</h2>
+      <ul>
+        <li>Name and contact information (email address)</li>
+        <li>Health profile data such as pregnancy week, baby age, and breastfeeding status</li>
+        <li>In-app chat history and nutrition questions</li>
+        <li>Subscription and payment status (via RevenueCat)</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>To provide personalized nutrition and health advice</li>
+        <li>To improve your app experience</li>
+        <li>To provide technical support</li>
+        <li>To manage subscription transactions</li>
+      </ul>
+
+      <h2>Information Sharing</h2>
+      <p>We do not sell your personal data. We only share data with our service providers (Supabase — data storage, Anthropic — AI, RevenueCat — subscription management) who are bound to use it only for specified purposes.</p>
+
+      <h2>Data Security</h2>
+      <p>We use industry-standard security measures to protect your data. All data is transmitted and stored in encrypted form.</p>
+
+      <h2>Health Data Privacy</h2>
+      <p>Your health information (pregnancy status, nutrition questions, etc.) is used solely to provide you with better service. It is not used for advertising and is not shared with third parties.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>Our app is not intended for users under 18 years of age. We do not knowingly collect personal data from users under 18.</p>
+
+      <h2>Data Deletion</h2>
+      <p>To delete your account and all associated data, email us at <a href="mailto:destek@kucak.app">destek@kucak.app</a>. We will process your request within 30 days.</p>
+
+      <h2>Contact</h2>
+      <p>For questions about our privacy policy: <a href="mailto:destek@kucak.app">destek@kucak.app</a></p>
+    </div>
+
+    <p class="last-updated">© 2025 Kucak. Tüm hakları saklıdır.</p>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
